@@ -36,3 +36,4 @@ tutorial git
 31- pegar arquivos atualizados do servidor ->$ git pull origin master (obs: faz o marge automatico)
 32- pega os arquivos do servidor sem fazer o merge ->$ git fetch origin branch
 33 - adiciona endereeco remoto ->$ git remote add bitbucket https://CaioProiete@bitbucket.org/CaioProiete/MeuProjecto.git
+34 -  COPIA CHAVE SSH -> pbcopy /.ssh/chave.pub
