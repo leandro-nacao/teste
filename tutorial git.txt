@@ -1,0 +1,37 @@
+tutorial git
+
+1-Instalar o Git
+2- configurar nome do usuario ->$ git config --global user.name 'Leandro'
+2- configurar email ->$ git config --global user.email 'leandro@nacaodesign.com.br'
+3- criar um diretorio para ser o repositorio local ->$ git init
+4- Verificar status ->$ git status
+5- Adcionar arquivos ->$ git add arquivo.txt ou ->$ git add *.php ou ->$ git add .
+6- Commitar (salvar versao final no repositorio) ->$ git commit -m 'comentario'
+7- Commit sem adicionar os arquivos (commit direto) ->$ git commit -a -m 'comentario'
+8- Verificar alterações no arquivo ->$ git diff
+9- Verificar alterações detalhadas ->$ git diff --staged
+10- Visualizar log de commites ->$ git log
+11- visualizar log de commit + diff ->$ git log -p
+12- visualizar ultimos logs ->$ git log -p -1 (retorna o ultimo commit)
+13- MODO GRAFICO DE RELATORIO ->$ gitk
+14- log curto (somente codigo e comentario) ->$ git log --pretty=oneline
+15- Editar ultimo commit : 1º add os arquivos ->$ git Add, 2º commit ->$ git commit --amend -m 'comentario'
+16- Remover arquivo da Staged Area ->$ git reset HEAD nome_do_arquivo.php
+17- reverter arquivo para o estado original ->$ git checkout -- nome_do_arquivo.php
+18- REMOVER DO REPOSITORIO ->$ git rm nome_do_arquivo.php
+19- CRIAR TAG (ponto de versão) ->$ git tag -a v1.0 -m 'versao 1.0'
+20- visualizar tags ->$ git tag
+21- visualizar detalhes da tag ->$ git show nome_da_tag
+22- voltar versao do sistema (tag) ->$ git checkout v0.0
+23- deleta tag ->$ git tag -d nome_da_tag
+24- voltar para o breach master (ramificação principal) ->$ git checkout master
+25- CRIAR NOVO BRANCH (ramificação) ->$ git branch nome ou ->$ git checkout -b nome
+26- MESCLAR BRANCHS (obs: o branch ativo deve ser o destino)
+25- CRIAR NOVO BRANCH (ramificação) ->$ git branch nome
+26- listar os branchs ->$ git branch
+27- deletar um brach ->$ git branch -d nome
+28- CRIAR UM REPOSITORIO COMPARTILHADO EM REDE ->$ git init --bare , em seguida clonar o repositorio ->$ git clone file:////nome_ou_ip/pasta/ novo_nome(opcional)
+29-  verificar nome do servidor ->$ git remote
+30- MANDAR ARQUIVOS PARA O SERVIDOR ->$ git push origin master
+31- pegar arquivos atualizados do servidor ->$ git pull origin master (obs: faz o marge automatico)
+32- pega os arquivos do servidor sem fazer o merge ->$ git fetch origin branch
